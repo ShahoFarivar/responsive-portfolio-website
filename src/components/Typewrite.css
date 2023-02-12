@@ -1,0 +1,25 @@
+.typewrite {
+    text-align: center;
+    color:#daa520;
+    font-weight: 900;
+    min-height: 45px;
+  }
+
+  @media (max-width:350px){
+    .typewrite{
+      font-size: 20px;
+      min-height: 50px;
+    }
+  }
+
+  @media (min-width:350px){
+    .typewrite{
+      font-size: 25px;
+    }
+  }
+
+  @media (min-width:1400px){
+    .typewrite{
+      font-size: 28px;
+    }
+  }

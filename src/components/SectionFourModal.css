@@ -1,0 +1,306 @@
+.section-four-modal{
+    width:100%;
+    min-height: 95vh;
+    position:absolute;
+    top:0;
+    left:0;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    z-index: 1001;
+    background-color: #222;
+    opacity: 0;
+    animation: modal-opacity 0.5s ease-out;
+    animation-fill-mode: forwards;
+    transform: translateX(100%);
+}
+
+@keyframes modal-opacity {
+    0%{
+        opacity: 0;
+        scale:0;
+    }
+
+    100%{
+        opacity:1;
+        scale:100%;
+        transform: translateX(0);
+    }
+}
+
+.close-btn{
+    position: sticky;
+    top:25px;
+    float: right;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.owner-image-modal{
+    background: no-repeat center center;
+    background-size: cover;
+    height: 90vh !important; 
+}
+
+.modal-title{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.modal-title span{
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 60.5px;
+}
+
+.divider{
+    margin-top:40px;
+    text-align: center; 
+}
+
+.fa-vcard{
+    color:rgb(218,165,32);
+    font-size: 20px;
+    margin-right:20px;
+    margin-left:20px;
+}
+
+.divider-line{
+    line-height: 1.5;
+    color: #656c6d;
+    display: inline-block;
+    vertical-align: super;
+    width: 25%;
+    border-bottom: 1px solid #666;
+}
+
+.content-wrapper{
+    margin-top:36px;
+    width: 100%;
+}
+
+.modal-data{
+    background-color: inherit;
+    border:none;
+    margin-top: 20px;
+}
+
+/* left section start */
+
+.left-section{
+    border: 1px solid #333;
+    padding: 24px;
+    background-color: #111111;
+}
+
+.left-section .title{
+    color:#daa520;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.left-section .first-element{
+    margin-top: 0;
+}
+
+.left-section i{
+    margin-right: 13px;
+    font-size: 16px;
+    color: rgba(255,255,255,0.3);
+}
+
+.left-section span{
+    color:#eee;
+    font-size: 16px;
+}
+
+.left-section ul li{
+    line-height: 1.5;
+    font-size: 16px;
+    color: #eee;
+    display: inline-block;
+    margin-right: 14px;
+    list-style-type: none;
+    border-radius: 50%;
+    min-width: 36px;
+    min-height: 36px;
+    position: relative;
+    margin: 4px;
+}
+
+.left-section ul li i{
+    position: absolute;
+    left:5px;
+    top:6px;
+    font-size: 25px;
+}
+
+.facebook{
+    background-color: #3b5998; 
+}
+
+.twitter{
+    background-color: #1da1f2; 
+}
+
+.google-plus{
+    background-color: #dd4b39; 
+}
+
+.linkedin{
+    background-color: #0077b5; 
+}
+
+@media (max-width:768px){
+    .left-section .title{
+        font-size: 16px;
+    }
+
+    .left-section i{
+        font-size: 14x;
+    }
+
+    .left-section span{
+        font-size: 14px;
+    }
+
+    .left-section ul li{
+        font-size: 12px;
+
+    }
+
+    .left-section ul li i{
+        font-size: 21px;
+        min-width: 30px;
+        min-height: 30px;
+    }
+}
+
+/* left section end */
+
+/* right section start */
+
+.right-section{
+    margin-top: 50px;
+}
+
+.right-section .title{
+    font-size: 1.15rem;
+    line-height: 110%;
+    margin: 0 !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+
+.right-section .content{
+    margin: 0 auto;
+    line-height: 2;
+    font-weight: 400;
+    min-height: 1px;
+    color: #eee;
+    font-size: 14px;
+    margin-top: 14px;
+    margin-bottom: 3px;
+}
+
+.right-section .form-group{
+    margin-bottom: 14px;
+}
+
+.right-section label{
+    color: #eee;
+    font-size: 12px; 
+    font-weight: 400;   
+    margin-left: 39px;
+    margin-bottom: 0;
+}
+
+.input-wrapper{
+    position: relative;
+    margin-top: -3px;
+}
+
+.right-section .input-wrapper i{
+    color:#ccc;
+    font-size: 19px;
+    position: absolute !important;
+    left:5px !important;
+    top:8px !important;
+}
+
+.right-section input{
+    margin-left:0;
+    margin-bottom: 12px;
+}
+
+.right-section textarea{
+    resize: none;
+    min-height: 3rem;
+    overflow: auto;
+    margin-top: 3px !important;
+}
+
+.right-section input, .right-section textarea{
+    font-size: 15px;
+    line-height: 1.15;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    font-size: 1rem;
+    margin: 0 0 8px 0;
+    padding: 0;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    margin-left: 40px;
+    width: calc(100% - 2.5rem);
+    box-shadow: none !important;
+    color: #fff !important;
+    border-bottom: 1px solid #666;
+}
+
+.right-section input:focus, .right-section textarea:focus{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+.right-section button{
+    margin: 0;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-radius: 0;
+    font-weight: 700;
+    line-height: 42px;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+    background: #daa520;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top:20px;
+}
+
+.right-section button:hover{
+    color:#eee;
+}
+
+@media (max-width:450px){
+    .right-section button{
+        font-size: 12px;
+    }
+}
+
+/* right section start */

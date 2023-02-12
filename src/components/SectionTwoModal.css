@@ -1,0 +1,425 @@
+.section-two-modal{
+    width:100%;
+    min-height: 95vh;
+    position:absolute;
+    top:0;
+    left:0;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    z-index: 1001;
+    background-color: #222;
+    opacity: 0;
+    animation: modal-opacity 0.5s ease-out;
+    animation-fill-mode: forwards;
+    transform: translateX(100%);
+}
+
+@keyframes modal-opacity {
+    0%{
+        opacity: 0;
+        scale:0;
+    }
+
+    100%{
+        opacity:1;
+        scale:100%;
+        transform: translateX(0);
+    }
+}
+
+.close-btn{
+    position: sticky;
+    top:25px;
+    float: right;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.owner-image-modal{
+    background: no-repeat center center;
+    background-size: cover;
+    height: 90vh !important; 
+}
+
+.modal-title{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.modal-title span{
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 60.5px;
+}
+
+.divider{
+    margin-top:40px;
+    text-align: center; 
+}
+
+.fa-vcard{
+    color:rgb(218,165,32);
+    font-size: 20px;
+    margin-right:20px;
+    margin-left:20px;
+}
+
+.divider-line{
+    line-height: 1.5;
+    color: #656c6d;
+    display: inline-block;
+    vertical-align: super;
+    width: 25%;
+    border-bottom: 1px solid #666;
+}
+
+.content-wrapper{
+    margin-top:36px;
+    width: 100%;
+}
+
+.modal-data{
+    background-color: inherit;
+    border:none;
+    margin-top: 20px;
+}
+
+/* personal info start */
+
+.personal-info-wrapper{
+    padding-bottom: 48px;
+}
+
+.personal-info-title{
+    color:#eee;
+    font-size: 18.4px;
+    font-weight: 600;
+}
+
+.personal-info-desc{
+    color:#eee;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.personal-info-items-wrapper{
+    color:#eee;
+    padding: inherit;
+    padding-bottom: 10px;
+}
+
+.personal-info-items-wrapper ul{
+    list-style: none;
+    font-size: 14.4px;
+    line-height: 40px;
+}
+
+.personal-info-items-wrapper span{
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.personal-info-items-1 ul{
+    margin-bottom: 0; 
+}
+
+.personal-info-items-2 ul{
+    margin-top: 0;  
+}
+
+.download-resume-btn{
+    border: none;
+    padding: 0 2rem;
+    vertical-align: middle;
+    outline: 0;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 700;
+    height: 42px;
+    line-height: 42px;
+    font-size: 15px;
+    background: #daa520;
+    float:left;
+}
+
+.download-resume-btn:hover{
+    color: #eee;
+}
+
+.my-blog-btn{
+    padding: 0 2rem;
+    vertical-align: middle;
+    outline: 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 700;
+    height: 42px;
+    line-height: 42px;
+    font-size: 15px;
+    background: transparent;
+    color: #daa520;
+    border: 1px solid #daa520;
+    float:right
+}
+
+.my-blog-btn:hover{
+    transition: .1s;
+    color: #fff;
+    background: #daa520;
+}
+
+.personal-info-items-wrapper .fa{
+    margin-left: 5px;
+}
+
+
+@media (max-width:370px){
+    .personal-info-btn-wrapper button{
+        padding-left: 4px ;
+        padding-right: 4px; 
+        font-size: 12px;  
+    }
+}
+
+@media (min-width:768px){
+    .personal-info-btn-wrapper button{
+        padding-right: 0px;
+        padding-left: 0px; 
+    }
+}
+
+@media (max-width:902px){
+    .personal-info-btn-wrapper button{
+        padding-right: 0px;
+        padding-left: 0px; 
+    }
+}
+
+@media (max-width:768px){
+    .download-resume-btn{
+        margin-bottom: 20px;
+    }
+}
+/* personal info end */
+
+
+/* abilities section small screen start */
+.abilities-section{
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding-bottom: 50px;
+}
+
+.ability-wrapper{
+    box-shadow: none;
+    border: 1px solid #333;
+    padding: 0 0;
+}
+
+.ability-wrapper .header{
+    background-color: #151515;
+    border-bottom: 1px solid #333;
+    padding: 24px;
+}
+
+.ability-wrapper .header .fa{
+    color:#daa520;
+    font-size: 21px;
+}
+
+.ability-wrapper .header p{
+    color:#daa520;
+    font-size: 21px;
+    margin-bottom: 0;
+}
+
+.ability-content{
+    padding: 22px;
+}
+
+.ability-info-header p{
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 11px;
+}
+.ability-info-header p span{
+    font-weight: 600;
+}
+
+.ability-info-year p{
+    color:#aaa;
+    font-size: 13px;
+    margin-bottom: 11px;
+}
+
+.ability-info-year p .fa{
+    color:#aaa;
+    font-size: 13px;
+    margin-right: 14px;
+}
+
+.ability-info-disc{
+    color:#eee;
+    font-size: 14px;
+}
+
+.separator{
+    background-color: #daa520;
+    height: 2px;
+    width: 70px;
+    font-size: 14.4px;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    display: inline-block;
+    width: 20%;
+    border-bottom: 1px solid #daa520;
+}
+
+.ability-1{
+    margin-bottom: 24px;
+}
+
+.ability-items-wrapper{
+    padding: 24px;
+}
+
+.ability-items-section ul{
+    list-style: none;
+    color: #fff;
+}
+
+.ability-items-section ul li p{
+    color:#daa520;
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+
+/* abilities section small screen end */
+
+
+/* abilities section large screen start */
+.abilities-section-lg{
+    margin: 0;    
+    position: relative;
+}
+
+.ability-btns{
+    padding: 0;
+    position: absolute;
+    left:0;
+}
+
+.abilities-content{
+    padding: 0;
+    position: absolute;
+    left:34%;
+}
+
+.ability-items-wrapper{
+    padding-bottom: 15px;
+}
+
+.ability-btns button{
+    color:#fff;
+    font-size: 18.4px;
+    background-color: #daa520;
+    border: none;
+    padding: 24px;
+    font-weight: 600;
+    outline: none;
+}
+
+.ability-btns button:hover{
+    color:#eee;
+}
+
+.ability-btns i{
+    color:#fff;
+    font-size: 18.4px;
+    line-height: 20.24px;
+}
+
+.edu-btn{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+@media (min-width:768px) {
+    .abilities-section-lg{
+        margin-bottom: 730px;
+    }   
+}
+
+@media (min-width:859px) {
+    .abilities-section-lg{
+        margin-bottom: 650px;
+    } 
+}
+
+@media (max-width:992px){
+    .ability-btns button {
+        font-size: 14px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    
+    .ability-btns i {
+        margin-right: 3px;
+        font-size: 14px;
+    }
+}
+/* abilities section large screen end */
+
+
+
+/* badges section start */
+
+.badges{
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+.badge-section{
+    margin-bottom: 32px;
+}
+
+.badge-3{
+    margin-bottom: 0;
+}
+
+.fa-briefcase, .fa-handshake, .fa-heart{
+    color:rgb(119,119,119);
+    font-size: 46.72px;
+    margin-bottom: 10px !important;
+}
+
+.badge-section span{
+    font-weight: 900;
+    color:#daa520;
+    font-size: 46.72px;   
+    margin-bottom: 10px !important;
+}
+
+.badge-section p{
+    font-weight: 900;
+    color:#eee;
+    font-size: 18.4px;   
+    margin-bottom: 0 !important;
+}
+
+/* badges section end */

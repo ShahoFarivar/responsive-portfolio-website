@@ -1,0 +1,203 @@
+@font-face {
+    font-family: Lato;
+    src: url('./fonts/Lato-Regular.ttf');
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111;
+    font-family: Lato;  
+}
+
+.main-container{ 
+    margin: 24px;
+    height: calc(100vh -24px);
+    overflow-y: visible !important;
+}
+
+.owner-image{
+    object-fit: cover;  
+    position: fixed;
+    overflow: hidden;
+    height: calc(100vh - 66px) !important; 
+    width: 33%;   
+}
+
+.content-container{
+    height: calc(100vh - 48px) !important;
+    width: 66%;
+}
+
+.upper-section, .lower-section{
+    height: calc(50vh); 
+}
+
+.upper-section{
+    padding: 15px;
+}
+
+.lower-section{
+    padding: 15px;
+}
+
+.section-two, .section-three, .section-four{
+    cursor: pointer;
+}
+
+.section-wrapper-other{
+    background-color: rgba(101, 108, 109,0.2);
+}
+
+.greetings{
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.owner-name{
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.first-text, .last-text{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.first-text{
+    color:#daa520;
+}
+
+.last-text{
+    color: #fff;
+}
+
+.spacer{
+    margin-left:3px;
+    margin-right:3px;
+}
+
+/* controling font sizes start */
+@media (max-width:350px){
+    .first-text, .last-text{
+        font-size: 20px;
+    }
+    .owner-name{
+        font-size:30px;
+    }
+    .greetings{
+        font-size: 15px;
+    }
+}
+
+@media (min-width:350px){
+    .first-text, .last-text{
+        font-size: 24px;
+    }
+    .owner-name{
+        font-size:35px;
+    }
+    .greetings{
+        font-size: 20px;
+    }
+}
+
+@media (min-width:576px){
+    .first-text, .last-text{
+        font-size: 30px;
+    }
+    .owner-name{
+        font-size:35px;
+    }
+    .greetings{
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1400px){
+    .first-text, .last-text{
+        font-size: 40px;
+    }
+    .owner-name{
+        font-size:55px;
+    }
+    .greetings{
+        font-size: 22px;
+    }
+}
+
+/* controling font sizes end */
+
+/* control section sizes start */
+@media (max-width:350px){
+    .upper-section{
+        max-height: 50%;  
+        margin-bottom: 15px;
+    }
+
+    .lower-section{
+        max-height: 50%;
+    }
+
+    .section-three{
+        max-height: 43%;
+    }
+    
+    .section-four{
+        margin-top: -35px;
+    }
+}
+
+@media (min-width:350px){
+    .upper-section{
+        max-height: 50%;  
+        margin-bottom: 15px;
+    }
+
+    .lower-section{
+        max-height: 50%;
+    }
+
+    .section-four{
+        margin-top: -10px;
+    }
+}
+
+@media (max-width:767px){
+    .upper-section, .lower-section{
+        height: calc(50vh);
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    
+    .upper-section{
+        max-height: 50%; 
+        margin-bottom: -10px;
+    }
+
+    .lower-section{
+        max-height: 50%;
+    }
+
+    .section-one{
+        max-height: 25%;
+    }
+
+    .section-two{
+        min-height: 35%;
+    }
+
+    .section-three{
+        margin-bottom: 28px;  
+    }
+    
+}
+
+
+/* control section sizes end */

@@ -1,0 +1,86 @@
+.section-three-modal{
+    width:100%;
+    min-height: 95vh;
+    position:absolute;
+    top:0;
+    left:0;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    z-index: 1001;
+    background-color: #222;
+    opacity: 0;
+    animation: modal-opacity 0.5s ease-out;
+    animation-fill-mode: forwards;
+    transform: translateX(100%);
+}
+
+@keyframes modal-opacity {
+    0%{
+        opacity: 0;
+        scale:0;
+    }
+
+    100%{
+        opacity:1;
+        scale:100%;
+        transform: translateX(0);
+    }
+}
+
+.close-btn{
+    position: sticky;
+    top:25px;
+    float: right;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.owner-image-modal{
+    background: no-repeat center center;
+    background-size: cover;
+    height: 90vh !important; 
+}
+
+.modal-title{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.modal-title span{
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 60.5px;
+}
+
+.divider{
+    margin-top:40px;
+    text-align: center; 
+}
+
+.fa-vcard{
+    color:rgb(218,165,32);
+    font-size: 20px;
+    margin-right:20px;
+    margin-left:20px;
+}
+
+.divider-line{
+    line-height: 1.5;
+    color: #656c6d;
+    display: inline-block;
+    vertical-align: super;
+    width: 25%;
+    border-bottom: 1px solid #666;
+}
+
+.content-wrapper{
+    margin-top:36px;
+    width: 100%;
+}
+
+.modal-data{
+    background-color: inherit;
+    border:none;
+    margin-top: 20px;
+}
